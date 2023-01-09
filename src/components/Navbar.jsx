@@ -28,7 +28,7 @@ function Navbar() {
                     <p 
                         className={pathMatchRoute('/offers') ? 'active' : 'navbarListItemName'}
                     >
-                        Offer
+                        Offers
                     </p>
                 </li>
 
