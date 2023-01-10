@@ -169,7 +169,7 @@ function CreateListing() {
 
         delete formDataCopy.images
         delete formDataCopy.address
-        location && (formDataCopy.location = location)
+        formDataCopy.location = address
         !formDataCopy.offer && delete formDataCopy.discountedPrice
 
         const docRef = await addDoc(collection(db,'listings'),formDataCopy)
