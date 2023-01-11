@@ -32,7 +32,7 @@ function App() {
           <Route path="/create-listing" element={<CreateListing/>} />
           <Route path="/create-listing" element={<CreateListing/>} />
           <Route path="/category/:categoryName/:listingId" element={<Listing/>} />
-          <Route path="/contact/:listingName" element={<Contact/>} />
+          <Route path="/contact/:landLordId" element={<Contact/>} />
         </Routes>
 
         <Navbar/>
