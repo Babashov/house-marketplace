@@ -9,6 +9,7 @@ import {v4 as uuidv4} from "uuid"
 import Spinner from "../components/Spinner"
 
 function CreateListing() {
+    // eslint-disable-next-line
     const [geolocationEnabled,setGeolocationEnabled] = useState(true)
     const [loading,setLoading] = useState(false)
     const [formData,setFormData] = useState({
@@ -128,12 +129,14 @@ function CreateListing() {
 
                         console.log('Upload is ' + progress + '% done');
                         switch (snapshot.state) {
-                        case 'paused':
-                            console.log('Upload is paused');
-                            break;
-                        case 'running':
-                            console.log('Upload is running');
-                            break;
+                            case 'paused':
+                                console.log('Upload is paused');
+                                break;
+                            case 'running':
+                                console.log('Upload is running');
+                                break;
+                            default:
+                                break;
                         }
                     }, 
                     (error) => {
